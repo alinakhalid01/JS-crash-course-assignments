@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <style>
+    .movie-content {
+      display: flex;
+    }
+
+    .details {
+      margin: 3%;
+    }
+  </style>
+
+  <script src="./assets/js/app.js"></script>
+  <title>JS Assignment 03</title>
+</head>
+
+<body>
+  <main class="mt-4">
+    <div class="container">
+      <h2 class="mb-5 p-3 col-lg-12 text-bg-warning" align="center">
+        Movie Recommendation App
+      </h2>
+
+      <div class="row">
+        <div class="form-group col-md-4">
+          <label for="genre">GENRE</label>
+
+          <select class="form-control" name="" id="searchGenre">
+            <option value="all">All</option>
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="animation">Animation</option>
+            <option value="comedy">Comedy</option>
+            <option value="crime">Crime</option>
+            <option value="drama">Drama</option>
+            <option value="family">Family</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="history">History</option>
+            <option value="horror">Horror</option>
+            <option value="music">Music</option>
+            <option value="mMystery">Mystery</option>
+            <option value="romance">Romance</option>
+            <option value="sciFiction">Science Fiction</option>
+            <option value="thriller">Thriller</option>
+            <option value="war">War</option>
+            <option value="western">Western</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="year">YEAR</label>
+
+          <select class="form-control" name="" id="searchYear">
+            <option value="all" selected>All</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="language">LANGAUGE</label>
+
+          <select class="form-control" name="" id="searchLang">
+            <option value="all" selected>All</option>
+            <option value="english">English</option>
+            <option value="urdu">German</option>
+            <option value="hindi">French</option>
+            <option value="korean">Korean</option>
+            <option value="japenese">Japenese</option>
+            <option value="mandarin">Mandarin</option>
+            <option value="italian">Italian</option>
+            <option value="cantonese">Cantonese</option>
+            <option value="spanish">Spanish</option>
+            <option value="swedish">Swedish</option>
+            <option value="hindi">Hindi</option>
+            <option value="dutch">Dutch</option>
+            <option value="russian">Russian</option>
+            <option value="thai">Thai</option>
+            <option value="danish">Danish</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <div class="form-group w-100">
+          <label for="rating">RATING</label>
+
+          <select class="form-control" name="" id="searchRate">
+            <option value="all">All</option>
+            <option value="7.0">7.0</option>
+            <option value="7.1">7.1</option>
+            <option value="7.2">7.2</option>
+            <option value="7.3">7.3</option>
+            <option value="7.4">7.4</option>
+            <option value="7.5">7.5</option>
+            <option value="7.6">7.6</option>
+            <option value="7.7">7.7</option>
+            <option value="7.8">7.8</option>
+            <option value="7.9">7.9</option>
+            <option value="8.0">8.0</option>
+            <option value="8.1">8.1</option>
+            <option value="8.2">8.2</option>
+            <option value="8.3">8.3</option>
+            <option value="8.4">8.4</option>
+            <option value="8.5">8.5</option>
+            <option value="8.6">8.6</option>
+            <option value="8.7">8.7</option>
+            <option value="8.8">8.8</option>
+            <option value="8.9">8.9</option>
+            <option value="9.0">9.0</option>
+          </select>
+        </div>
+      </div>
+
+      <table class="table table-hover table-condenced">
+        <tr>
+          <th>Rank</th>
+          <th>Movie</th>
+          <th>Year</th>
+        </tr>
+        <tbody id="tableBody">
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+
+</html>
